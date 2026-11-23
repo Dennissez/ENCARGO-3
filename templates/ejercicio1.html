@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Notas</title>
+    <link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+<div class="container">
+        <h2>Formulario</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label for="nota1">Nota 1:</label>
+                <input type="number" name="nota1" min="10" max="70" required>
+            </div>
+            <div class="form-group">
+                <label for="nota2">Nota 2:</label>
+                <input type="number" name="nota2" min="10" max="70" required>
+            </div>
+            <div class="form-group">
+                <label for="nota3">Nota 3:</label>
+                <input type="number" name="nota3" min="10" max="70" required>
+            </div>
+            <div class="form-group">
+                <label for="asistencia">Asistencia (%):</label>
+                <input type="number" name="asistencia" min="0" max="100" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <p>{{ promedio }}</p>
+        <p>{{ estado }}</p>
+    </div>
+</body>
+</html>
